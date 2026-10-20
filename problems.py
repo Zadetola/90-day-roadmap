@@ -23,3 +23,13 @@ def is_palindrome(word):
 print(is_palindrome('level'))
 print(is_palindrome('hello'))
 print(is_palindrome('Madam'))
+
+for n in range(1, 16):
+        if n % 5 == 0 and n % 3 == 0:
+            print('FizzBuzz')
+        elif n % 3 ==0:
+         print ('Fizz')
+        elif n % 5 == 0:
+         print ('Buzz')
+        else:
+         print (n)
