@@ -36,3 +36,28 @@ def binary_search(items, target, low, high):
         return binary_search(items, target, low, middle-1)
 print(binary_search([4, 8, 15, 16, 23, 42], 23, 0, 5))
 print(binary_search([4, 8, 15, 16, 23, 42], 99, 0, 5))
+
+
+def in_order(node):
+    if node is None:
+        return
+    in_order(node.left)
+    print(node.value)
+    in_order(node.right)
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+a = Node('A')
+b = Node('B')
+c = Node('C')
+d = Node('D')
+e = Node('E')
+
+a.left = b
+a.right = c
+b.left = d
+b.right = e
+
+in_order(a)
