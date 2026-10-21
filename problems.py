@@ -33,3 +33,11 @@ for n in range(1, 16):
          print ('Buzz')
         else:
          print (n)
+
+def sum_evens(items):
+  total=0
+  for number in items:
+      if number % 2 == 0:
+       total += number
+  return total
+print(sum_evens([5, 8, 3, 6]))
